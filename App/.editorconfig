@@ -1,0 +1,4 @@
+[*.cs]
+
+# SA1640: File header should have valid company text
+dotnet_diagnostic.SA1636.severity = none
