@@ -88,6 +88,14 @@ namespace App
                 }
             }
 
+            string currentTime = DateTime.UtcNow.ToString("o");
+            //var response = await s3.PutObjectAsync(new PutObjectRequest
+            //{
+            //    ContentBody = currentTime,
+            //    BucketName = request.Bucket,
+            //    Key = request.Key,
+            //});
+
             return stringBuilder.ToString();
         }
 
