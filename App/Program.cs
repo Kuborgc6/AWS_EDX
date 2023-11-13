@@ -66,10 +66,18 @@ namespace App
             AmazonS3Client s3 = new AmazonS3Client();
             var selectObjectContentResponse = await s3.SelectObjectContentAsync(request);
 
-            // see also https://github.com/aws-samples/aws-netcore-webapp-using-amazonpersonalize/blob/main/AWS.Samples.Amazon.Personalize.Demo/Support/StorageService.cs
             var payload = selectObjectContentResponse.Payload;
-
             var stringBuilder = new StringBuilder();
+
+            // Add the code to update last-queried.txt with the current date and time
+            string currentTime = DateTime.UtcNow.ToString("o");
+            var response = await s3.PutObjectAsync(new PutObjectRequest
+            {
+                ContentBody = currentTime,
+                BucketName = request.Bucket,
+                Key = "last-queried.txt", // The key is set to last-queried.txt
+            });
+
             using (payload)
             {
                 foreach (var ev in payload)
@@ -87,14 +95,6 @@ namespace App
                     }
                 }
             }
-
-            string currentTime = DateTime.UtcNow.ToString("o");
-            //var response = await s3.PutObjectAsync(new PutObjectRequest
-            //{
-            //    ContentBody = currentTime,
-            //    BucketName = request.Bucket,
-            //    Key = request.Key,
-            //});
 
             return stringBuilder.ToString();
         }
