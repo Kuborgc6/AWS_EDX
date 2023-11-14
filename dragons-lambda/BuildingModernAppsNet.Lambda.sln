@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingModernAppsNet.Lambda.ListDragons", "BuildingModernAppsNet.Lambda.ListDragons\BuildingModernAppsNet.Lambda.ListDragons.csproj", "{EF9C601F-E000-46AF-A10B-A357096910CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{64C0B384-C410-445A-948C-80665A2D5474}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingModernAppsNet.Model", "BuildingModernAppsNet.Model\BuildingModernAppsNet.Model.csproj", "{D06A3BB9-B838-43BD-BD80-8D5CDEA042DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingModernAppsNet.Lambda.AddDragon", "BuildingModernAppsNet.Lambda.AddDragon\BuildingModernAppsNet.Lambda.AddDragon.csproj", "{126121E4-1DED-4BBC-80A2-ADE5BCFE1C19}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingModernAppsNet.Lambda.ValidateDragon", "BuildingModernAppsNet.Lambda.ValidateDragon\BuildingModernAppsNet.Lambda.ValidateDragon.csproj", "{208B490E-4A4D-4964-8692-FB542A0517A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF9C601F-E000-46AF-A10B-A357096910CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF9C601F-E000-46AF-A10B-A357096910CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF9C601F-E000-46AF-A10B-A357096910CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF9C601F-E000-46AF-A10B-A357096910CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D06A3BB9-B838-43BD-BD80-8D5CDEA042DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D06A3BB9-B838-43BD-BD80-8D5CDEA042DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D06A3BB9-B838-43BD-BD80-8D5CDEA042DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D06A3BB9-B838-43BD-BD80-8D5CDEA042DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{126121E4-1DED-4BBC-80A2-ADE5BCFE1C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{126121E4-1DED-4BBC-80A2-ADE5BCFE1C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{126121E4-1DED-4BBC-80A2-ADE5BCFE1C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{126121E4-1DED-4BBC-80A2-ADE5BCFE1C19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{208B490E-4A4D-4964-8692-FB542A0517A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{208B490E-4A4D-4964-8692-FB542A0517A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{208B490E-4A4D-4964-8692-FB542A0517A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{208B490E-4A4D-4964-8692-FB542A0517A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96666EC3-36F6-47F5-861A-8C121C3DD2F4}
+	EndGlobalSection
+EndGlobal
